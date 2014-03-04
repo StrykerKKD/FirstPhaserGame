@@ -2,7 +2,7 @@
 Player module
 Dependencys: HUD.js and Level.js
 */
-define(['HUD','Level'],function(HUD,Level) {
+define(['module/HUD','module/Level'],function(HUD,Level) {
 
     //Private variables
     var _game = null,
@@ -25,7 +25,7 @@ define(['HUD','Level'],function(HUD,Level) {
             _game = game;
         },
         preload: function() {
-            _game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
+            _game.load.spritesheet('dude', 'assets/img/dude.png', 32, 48);
         },
         create: function() {
             _sprite = _game.add.sprite(32, _game.world.height - 150, 'dude');

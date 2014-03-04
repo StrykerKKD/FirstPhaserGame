@@ -9,8 +9,7 @@ define(function(){
         _platforms = null,
         _stars = null,
         _ground = null,
-        _ledge = null,
-        _stars = null;
+        _ledge = null;
 
     //Public functions
     return{
@@ -18,9 +17,9 @@ define(function(){
             _game = game;
         },
         preload: function() {
-            _game.load.image('sky', 'assets/sky.png');
-            _game.load.image('ground', 'assets/platform.png');
-            _game.load.image('star', 'assets/star.png');
+            _game.load.image('sky', 'assets/img/sky.png');
+            _game.load.image('ground', 'assets/img/platform.png');
+            _game.load.image('star', 'assets/img/star.png');
         },
         create: function() {
             // add background for this level
